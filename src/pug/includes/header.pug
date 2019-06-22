@@ -1,0 +1,29 @@
+// header
+header.header
+  .container
+    .row.p-0
+      .col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+        img.header__logo(src="../img/logo.svg", alt="Logo")
+      .col-xl-6.col-lg-10.col-md-10.col-sm-12.col-10.align-self-center
+        div.header__respMenu Меню<span class="header__expand"><i class="material-icons">expand_more</i></span>
+        ul.header__nav
+          li.header__link 
+            a(href="#") О нас
+          li.header__link 
+            a(href="#") Услуги
+            <span class="header__expand"><i class="material-icons">expand_more</i></span>
+          li.header__link 
+            a(href="#") Вакансии
+          li.header__link
+            a(href="#") Новости
+          li.header__link 
+            a(href="#") Соглашения
+            <span class="header__expand"><i class="material-icons">expand_more</i></span>
+      .col-xl-4.col-lg-12.col-md-12.col-sm-12.col-12
+        ul.header__authorisation
+          li.header__login
+            button.btn_white Войти
+          li.header__register
+            button.btn_blue Зарегистрироваться
+
+// -----------------------------------------------------------------------------------------------------------------

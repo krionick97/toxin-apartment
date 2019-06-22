@@ -4,27 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,latin-ext">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Toxin</title>
+<title>Toxin</title>
   <link href="./css/style.css" rel="stylesheet"></head>
   <body>
-    <header>
-      <h1 class="header">Header</h1>
-    </header>
-    <section class="box">
-      <h2 class="box-title">Box Title</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="box-text text-reg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis impedit iste qui velit cum modi quod nihil a fugit odio!mnb</p>
-          </div>
-          <div class="col-6">
-            <p class="box-text text-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis impedit iste qui velit cum modi quod nihil a fugit odio!mnb</p>
-          </div>
-        </div>
+<!-- header-->
+<header class="header">
+  <div class="container">
+    <div class="row p-0">
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12"><img class="header__logo" src="../img/logo.svg" alt="Logo"></div>
+      <div class="col-xl-6 col-lg-10 col-md-10 col-sm-12 col-10 align-self-center">
+        <div class="header__respMenu">Меню<span class="header__expand"><i class="material-icons">expand_more</i></span></div>
+        <ul class="header__nav">
+          <li class="header__link"> <a href="#">О нас</a></li>
+          <li class="header__link"> <a href="#">Услуги</a><span class="header__expand"><i class="material-icons">expand_more</i></span></li>
+          <li class="header__link"> <a href="#">Вакансии</a></li>
+          <li class="header__link"><a href="#">Новости</a></li>
+          <li class="header__link"> <a href="#">Соглашения</a><span class="header__expand"><i class="material-icons">expand_more</i></span></li>
+        </ul>
       </div>
-    </section>
+      <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+        <ul class="header__authorisation">
+          <li class="header__login">
+            <button class="btn_white">Войти</button>
+          </li>
+          <li class="header__register">
+            <button class="btn_blue">Зарегистрироваться</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ------------------------------------------------------------------------------------------------------------------->
 <footer>
   <h1 class="footer">Footer</h1>
 </footer>

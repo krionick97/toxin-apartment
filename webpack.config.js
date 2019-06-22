@@ -4,6 +4,7 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -39,6 +40,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: './css/style.css'
     }),
+    new CopyPlugin([
+      { from: 'src/img', to: 'img' },
+    ]),
   ],
   module: {
     rules: [
@@ -49,6 +53,28 @@ module.exports = {
           pretty: true
         }
       },
+      // {
+      //   test: /\.svg$/,
+      //   use: 'file-loader',
+      // },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[path][name].[ext]'
+      //       },
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   use: [
+      //     'url-loader?limit=10000',
+      //     'img-loader'
+      //   ]
+      // },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],

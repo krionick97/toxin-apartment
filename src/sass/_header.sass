@@ -1,0 +1,62 @@
+/* Header */
+.header
+  padding: 1.5rem 0
+  +mont_reg
+  font-size: 1.4rem
+  &__respMenu
+    display: none
+    margin: 0 0 0.42rem
+    text-transform: uppercase
+    color: $color-gray-light
+    &:hover
+      cursor: pointer
+  &__nav
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__link
+    color: $color-gray-light
+    display: flex
+    &:nth-child(5)
+      margin-right: 1.2rem
+    a
+      color: $color-gray-light
+  &__expand
+    display: flexbox
+    align-items: flex-start
+    height: 1.4rem
+    &:hover
+      cursor: pointer
+  &__authorisation
+    display: flex
+    justify-content: flex-end
+    li:first-child
+      margin-right: 1rem
+    li:last-child
+      margin-left: 1rem
+
+/* Header Adaptive */
+@media (max-width: 1200px)
+  .header
+    // &__nav
+    //   display: none
+    // &__respMenu
+    //   display: flex
+
+    &__authorisation
+      justify-content: flex-start
+      margin: 2rem 0 0 -4rem
+
+@media (max-width: 768px)
+  .header
+    &__nav
+      margin: 1rem 0 0 -4.2rem
+    &__link
+      padding: 0.8rem
+@media (max-width: 584px)
+  .header
+    &__nav
+      flex-flow: column wrap
+    &__expand
+      display: none
+/* -------------------------------------------------------------------------------------------- */

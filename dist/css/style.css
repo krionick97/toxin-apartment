@@ -1,7 +1,111 @@
 
+/* UI-kit */
+.btn_white {
+  color: #BC9CFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 0.2rem solid #BC9CFF;
+  height: 3.4rem;
+  border-radius: 1.7em;
+  padding: 0 1.7rem;
+  transition: 0.1s; }
+  .btn_white:focus {
+    outline: none; }
+  .btn_white:active {
+    transform: translateY(0.1rem); }
+
+.btn_blue {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #BC9CFF;
+  border: 0.2rem solid #BC9CFF;
+  height: 3.4rem;
+  border-radius: 1.7rem;
+  padding: 0 1.7rem;
+  transition: 0.1s; }
+  .btn_blue:focus {
+    outline: none; }
+  .btn_blue:active {
+    transform: translateY(0.1rem); }
+
+/*------------------------------------------------------------------------------------------- */
 html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px; }
+  font-size: 10px; }
+
+ul {
+  list-style-type: none; }
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto; }
+
+/* Header */
+.header {
+  padding: 1.5rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem; }
+  .header__respMenu {
+    display: none;
+    margin: 0 0 0.42rem;
+    text-transform: uppercase;
+    color: #8F8FA0; }
+    .header__respMenu:hover {
+      cursor: pointer; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .header__link {
+    color: #8F8FA0;
+    display: flex; }
+    .header__link:nth-child(5) {
+      margin-right: 1.2rem; }
+    .header__link a {
+      color: #8F8FA0; }
+  .header__expand {
+    display: flexbox;
+    align-items: flex-start;
+    height: 1.4rem; }
+    .header__expand:hover {
+      cursor: pointer; }
+  .header__authorisation {
+    display: flex;
+    justify-content: flex-end; }
+    .header__authorisation li:first-child {
+      margin-right: 1rem; }
+    .header__authorisation li:last-child {
+      margin-left: 1rem; }
+
+/* Header Adaptive */
+@media (max-width: 1200px) {
+  .header__authorisation {
+    justify-content: flex-start;
+    margin: 2rem 0 0 -4rem; } }
+
+@media (max-width: 768px) {
+  .header__nav {
+    margin: 1rem 0 0 -4.2rem; }
+  .header__link {
+    padding: 0.8rem; } }
+
+@media (max-width: 584px) {
+  .header__nav {
+    flex-flow: column wrap; }
+  .header__expand {
+    display: none; } }
+
+/* -------------------------------------------------------------------------------------------- */
 
